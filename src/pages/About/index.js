@@ -1,4 +1,9 @@
+import React from 'react'
+
 function About() {
-    return <div></div>;
-  }
-  export default About;
+  return (
+    <h1 className='text-white'>About</h1>
+  )
+}
+
+export default About

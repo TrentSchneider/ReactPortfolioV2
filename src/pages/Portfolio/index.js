@@ -1,4 +1,9 @@
+import React from 'react'
+
 function Portfolio() {
-  return <div></div>;
+  return (
+    <h1 className='text-white'>Portfolio</h1>
+  )
 }
-export default Portfolio;
+
+export default Portfolio
