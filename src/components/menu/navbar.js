@@ -12,18 +12,9 @@ function Menu(props) {
 
   const showSidebar = () => setSidebar(!sidebar);
 
-  function lightDarkIcon() {
-    if (!props.toggleDark) {
-      return <BsIcons.BsMoonStarsFill />;
-    } else if (props.toggleDark) {
-      return <BsIcons.BsFillSunFill />;
-    }
-  }
-
   return (
     <>
       <div className="dark">
-        {/* <IconContext.Provider value={{ color: props.lightDark.icon }}> */}
         <div className="navMenu mb-1">
           <Link to="#" className="menu-bars bars-margin text-light">
             <FaIcons.FaBars onClick={showSidebar} />

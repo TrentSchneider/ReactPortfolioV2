@@ -10,8 +10,7 @@ import Contact from "./pages/Contact";
 function App() {
   const [toggleDark, setToggleDark] = useState(false);
   const [lightDark, setLightDark] = useState({
-    background: "text-bg-light",
-    icon: "#000"
+    background: "text-bg-light"
   });
 
   const toggleDarkMode = () => setToggleDark(!toggleDark);
