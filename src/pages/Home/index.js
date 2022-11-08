@@ -1,8 +1,9 @@
 import React from "react";
 
-function Home() {
+function Home(props) {
+  const mainFormat = `fillHeight ${props.lightDark.background}`;
   return (
-    <div className="fillHeight">
+    <div className={mainFormat}>
       <h1>Home</h1>
     </div>
   );
