@@ -7,10 +7,6 @@
   font-family: "Lato", sans-serif;
 }
 
-ul {
-  margin: 0;
-}
-
 .home,
 .about,
 .portfolio,
@@ -37,5 +33,5 @@ ul {
 }
 
 .dark {
-  background-color: darkgrey;
+  background-color: rgb(32, 33, 33);
 }

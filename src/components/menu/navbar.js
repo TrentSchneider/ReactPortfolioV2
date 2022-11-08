@@ -11,31 +11,43 @@ function Menu(props) {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-  const menuItems = `nav-menu-items ${props.lightDark.menuItems}`;
+
+  function lightDarkIcon() {
+    if (!props.toggleDark) {
+      return <BsIcons.BsMoonStarsFill />;
+    } else if (props.toggleDark) {
+      return <BsIcons.BsFillSunFill />;
+    }
+  }
+
   return (
     <>
-      <div className={props.lightDark.background}>
-        <IconContext.Provider value={{ color: props.lightDark.icon }}>
-          <div className="navMenu">
-            <Link to="#" className="menu-bars">
-              <FaIcons.FaBars onClick={showSidebar} />
-            </Link>
-          </div>
+      <div className="dark">
+        {/* <IconContext.Provider value={{ color: props.lightDark.icon }}> */}
+        <div className="navMenu mb-1">
+          <Link to="#" className="menu-bars bars-margin text-light">
+            <FaIcons.FaBars onClick={showSidebar} />
+          </Link>
+        </div>
+        <IconContext.Provider value={{ color: "#fff" }}>
           <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-            <ul className={menuItems} onClick={showSidebar}>
+            <ul className="nav-menu-items dark" onClick={showSidebar}>
               <li className="navbar-toggle">
                 <Link to="#" className="menu-bars">
                   <AiIcons.AiOutlineClose />
                 </Link>
-                <Link to="#" onClick={props.toggleDarkMode}>
-                  <BsIcons.BsMoonStarsFill />
+                <Link to="#" onClick={props.toggleDarkMode} className="ms-4">
+                  {props.toggleDark ? (
+                    <BsIcons.BsFillSunFill />
+                  ) : (
+                    <BsIcons.BsMoonStarsFill />
+                  )}
                 </Link>
               </li>
               {SidebarData.map((item, index) => {
-                const textC = `${item.classN} ${props.lightDark.menuItems}Text`;
                 return (
-                  <li key={index} className={textC}>
-                    <Link to={item.path}>
+                  <li key={index} className={item.classN}>
+                    <Link to={item.path} className="link-light">
                       {item.icon}
                       <span>{item.title}</span>
                     </Link>

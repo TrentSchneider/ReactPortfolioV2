@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Menu from "./components/menu/navbar";
 import "./App.css";
@@ -11,17 +11,33 @@ function App() {
   const [toggleDark, setToggleDark] = useState(false);
   const [lightDark, setLightDark] = useState({
     background: "text-bg-light",
-    icon: "#000",
-    menuItems: "light"
+    icon: "#000"
   });
 
   const toggleDarkMode = () => setToggleDark(!toggleDark);
+
+  useEffect(() => {
+    if (!toggleDark) {
+      return setLightDark({
+        background: "text-bg-light"
+      });
+    } else if (lightDark) {
+      return setLightDark({
+        background: "text-bg-dark"
+      });
+    }
+  }, [lightDark, toggleDark]);
+
   const fill = `App mHeight ${lightDark.background}`;
   return (
     <>
       <Router>
         <div className={fill}>
-          <Menu toggleDarkMode={toggleDarkMode} lightDark={lightDark} />
+          <Menu
+            toggleDarkMode={toggleDarkMode}
+            lightDark={lightDark}
+            toggleDark={toggleDark}
+          />
           <Routes>
             <Route path="/" exact element={<Home lightDark={lightDark} />} />
             <Route path="/about" element={<About />} />
