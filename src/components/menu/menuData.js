@@ -11,12 +11,6 @@ export const SidebarData = [
     classN: "nav-text"
   },
   {
-    title: "About",
-    path: "/about",
-    icon: <BsIcons.BsFillPersonFill />,
-    classN: "nav-text"
-  },
-  {
     title: "Portfolio",
     path: "/portfolio",
     icon: <FaIcons.FaFolderOpen />,
