@@ -29,6 +29,17 @@ function App() {
     }
   }, [lightDark, toggleDark]);
 
+  useEffect(() => {
+    const value = JSON.parse(localStorage.getItem('toggleDark'));
+    if (value) {
+     setToggleDark(value);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('toggleDark', JSON.stringify(toggleDark));
+  }, [toggleDark]);
+
   const fill = `App mHeight ${lightDark.background}`;
   return (
     <>
