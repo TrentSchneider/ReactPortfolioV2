@@ -14,11 +14,11 @@ function Home(props) {
             <div className={cardBackground}>
               <div className="row g-0">
                 <div className="col-md-4">
-                  <img
+                  {/* <img
                     src={require("../../files/images/SelfImage.jpeg")}
                     className="img-fluid rounded-start"
                     alt="..."
-                  />
+                  /> */}
                 </div>
                 <div className="col-md-8 d-flex">
                   <div className="card-body ">
