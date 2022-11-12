@@ -39,9 +39,9 @@ function Home(props) {
             />
           </h1>
           <h2>Full Stack Web Developer</h2>
-          <Link to="/contact" className="flat-button">
+          <a href="mailto:trentonschneider@gmail.com" className="flat-button">
             CONTACT ME
-          </Link>
+          </a>
         </div>
       </div>
       <Loader type="ball-clip-rotate-multiple" />

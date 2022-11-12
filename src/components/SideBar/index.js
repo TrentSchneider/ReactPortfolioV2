@@ -47,6 +47,11 @@ function SideBar() {
             <FaIcons.FaGithub />
           </a>
         </li>
+        <li>
+          <a href="mailto:trentonschneider@gmail.com">
+            <FaIcons.FaEnvelope />
+          </a>
+        </li>
       </ul>
     </div>
   );
