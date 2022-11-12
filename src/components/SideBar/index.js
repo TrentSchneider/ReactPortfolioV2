@@ -3,9 +3,6 @@ import * as FaIcons from "react-icons/fa";
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { IconContext } from "react-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 function SideBar() {
   return (
