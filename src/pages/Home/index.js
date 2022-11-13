@@ -3,10 +3,11 @@ import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import AnimatedLetters from "../../components/AnimatedLetters";
 import "./index.scss";
+import Logo from "./Logo";
 
 function Home(props) {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const name = " Trent";
+  const name = " Trent S.";
   const nameArray = [...name];
   const job = "web developer.";
   const jobArray = [...job];
@@ -43,6 +44,7 @@ function Home(props) {
             CONTACT ME
           </a>
         </div>
+        <Logo />
       </div>
       <Loader type="ball-clip-rotate-multiple" />
     </>
