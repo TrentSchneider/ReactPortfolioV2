@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactPortfolioV2/static/css/main.bad26735.css",
-    "main.js": "/ReactPortfolioV2/static/js/main.38cff1c5.js",
+    "main.js": "/ReactPortfolioV2/static/js/main.e92fad62.js",
     "static/js/787.90cb1194.chunk.js": "/ReactPortfolioV2/static/js/787.90cb1194.chunk.js",
     "static/media/helvetica-neu.ttf": "/ReactPortfolioV2/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff": "/ReactPortfolioV2/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
@@ -11,11 +11,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/ReactPortfolioV2/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/ReactPortfolioV2/index.html",
     "main.bad26735.css.map": "/ReactPortfolioV2/static/css/main.bad26735.css.map",
-    "main.38cff1c5.js.map": "/ReactPortfolioV2/static/js/main.38cff1c5.js.map",
+    "main.e92fad62.js.map": "/ReactPortfolioV2/static/js/main.e92fad62.js.map",
     "787.90cb1194.chunk.js.map": "/ReactPortfolioV2/static/js/787.90cb1194.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bad26735.css",
-    "static/js/main.38cff1c5.js"
+    "static/js/main.e92fad62.js"
   ]
 }
