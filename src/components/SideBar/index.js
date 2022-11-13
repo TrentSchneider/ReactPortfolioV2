@@ -1,17 +1,26 @@
 import "./index.scss";
 import * as FaIcons from "react-icons/fa";
+import * as IoIcons from "react-icons/io";
 
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function SideBar() {
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <div className="nav-bar">
-      <nav>
-        <NavLink exact="true" activeClassName="active" to="/">
+      <nav className={showNav ? "mobile-show" : ""}>
+        <NavLink
+          onClick={() => setShowNav(false)}
+          exact="true"
+          activeClassName="active"
+          to="/"
+        >
           <FaIcons.FaHome />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeClassName="active"
           className="about-link"
@@ -20,6 +29,7 @@ function SideBar() {
           <FaIcons.FaUser />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeClassName="active"
           className="portfolio-link"
@@ -27,6 +37,12 @@ function SideBar() {
         >
           <FaIcons.FaFolderOpen />
         </NavLink>
+        <IoIcons.IoMdClose
+          onClick={() => setShowNav(false)}
+          color="#ffd700"
+          size="30px"
+          className="close-icon"
+        />
       </nav>
       <ul>
         <li>
@@ -53,6 +69,12 @@ function SideBar() {
           </a>
         </li>
       </ul>
+      <FaIcons.FaBars
+        onClick={() => setShowNav(true)}
+        className="hamburger-icon"
+        color="#ffd700"
+        size="30px"
+      />
     </div>
   );
 }
