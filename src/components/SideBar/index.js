@@ -22,10 +22,10 @@ function SideBar() {
         <NavLink
           exact="true"
           activeClassName="active"
-          className="contact-link"
-          to="/contact"
+          className="portfolio-link"
+          to="/portfolio"
         >
-          <FaIcons.FaEnvelope />
+          <FaIcons.FaFolderOpen />
         </NavLink>
       </nav>
       <ul>
