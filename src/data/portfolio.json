@@ -1,0 +1,22 @@
+{
+  "portfolio": [
+    {
+      "cover": "/portfolio/cinecenter/CineCenter.png",
+      "title": "CineCenter",
+      "description": "React, MongoDB, Express, Node, Google API, OMDB API",
+      "url": "http://google.com"
+    },
+    {
+      "cover": "/portfolio/cinecenter/CineCenter.png",
+      "title": "CineCenter",
+      "description": "React, MongoDB, Express, Node, Google API, OMDB API",
+      "url": "http://google.com"
+    },
+    {
+      "cover": "/portfolio/cinecenter/CineCenter.png",
+      "title": "CineCenter",
+      "description": "React, MongoDB, Express, Node, Google API, OMDB API",
+      "url": "http://google.com"
+    }
+  ]
+}
