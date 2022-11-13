@@ -1,22 +1,40 @@
 {
   "portfolio": [
     {
-      "cover": "/portfolio/cinecenter/CineCenter.png",
+      "cover": "/portfolio/cinecenter/CineCenter.jpeg",
       "title": "CineCenter",
-      "description": "React, MongoDB, Express, Node, Google API, OMDB API",
+      "description": "React, MongoDB, Express, Node",
       "url": "http://google.com"
     },
     {
-      "cover": "/portfolio/cinecenter/CineCenter.png",
-      "title": "CineCenter",
-      "description": "React, MongoDB, Express, Node, Google API, OMDB API",
-      "url": "http://google.com"
+      "cover": "/portfolio/EmployeeManager/EmployeeManager.jpeg",
+      "title": "Employee Manager",
+      "description": "JS, Inquirer, MySQL, console.table",
+      "url": "https://github.com/TrentSchneider/EmployeeManager"
     },
     {
-      "cover": "/portfolio/cinecenter/CineCenter.png",
-      "title": "CineCenter",
-      "description": "React, MongoDB, Express, Node, Google API, OMDB API",
-      "url": "http://google.com"
+      "cover": "/portfolio/NoteTaker/NoteTaker.jpeg",
+      "title": "Note Taker",
+      "description": "JS, Node, Express",
+      "url": "https://github.com/TrentSchneider/NoteTaker"
+    },
+    {
+      "cover": "/portfolio/Planner/Planner.jpeg",
+      "title": "Daily Planner",
+      "description": "JS, JQuery, Local Storage",
+      "url": "https://trentschneider.github.io/DailyPlanner/"
+    },
+    {
+      "cover": "/portfolio/UWiki/UWiki.jpeg",
+      "title": "UWiki",
+      "description": "NJ, Node, Express, MySQL",
+      "url": "https://github.com/TrentSchneider/UWiki"
+    },
+    {
+      "cover": "/portfolio/Weather/Weather.jpeg",
+      "title": "Weather Dashboard",
+      "description": "JS, Ajax, OpenWeatherMap API, JQuery",
+      "url": "https://trentschneider.github.io/WeatherDashboard/"
     }
   ]
 }
